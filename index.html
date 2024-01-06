@@ -4,14 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henrys playground</title>
-    <script>
-      let x = 0
-    </script>
   </head>
+  <script>
+    let count = 0
+    def increment() {
+      count ++;
+      document.getElementById("demo").innerHTML = count;
+    }
+  </script>
   <body>
     <a href = "https://pixabay.com/images/search/globe/"><img src="https://raw.githubusercontent.com/HENRYTHEGR/learn-heroku/master/World.jpeg" alt="A cute cat playing in the garden"></a>
     <h1>Henry @ Harley! whoop whoop</h1>
-    <button onclick="getElementById('demo').innerHTML=x">What is the time?</button>
+    <!--<button onclick=x ++ "getElementById('demo').innerHTML=x">What is the time?</button>-->
 <p id="demo"></p>
 <style>
 h1 {
